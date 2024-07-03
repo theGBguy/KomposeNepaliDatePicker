@@ -63,7 +63,7 @@ publishing {
         pom {
             name.set("KomposeNepaliDatePicker")
             description.set("Kotlin Multiplatform library")
-            //url.set("") todo
+            url.set("https://github.com/theGBguy/KomposeNepaliDatePicker")
 
             licenses {
                 license {
@@ -73,13 +73,13 @@ publishing {
             }
             developers {
                 developer {
-                    //id.set("") todo
-                    //name.set("") todo
-                    //email.set("") todo
+                    id.set("theGBguy")
+                    name.set("Chiranjeevi Pandey")
+                    email.set("chiran604@gmail.com")
                 }
             }
             scm {
-                //url.set("") todo
+                url.set("https://github.com/theGBguy/KomposeNepaliDatePicker")
             }
         }
     }

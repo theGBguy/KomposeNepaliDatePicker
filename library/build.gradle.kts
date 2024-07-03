@@ -1,9 +1,11 @@
+import com.vanniktech.maven.publish.SonatypeHost
+
 plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.compose)
     alias(libs.plugins.compose.compiler)
-    id("convention.publication")
+    id("com.vanniktech.maven.publish") version "0.29.0"
 }
 
 group = "io.github.thegbguy"
@@ -11,7 +13,7 @@ version = "1.0"
 
 kotlin {
     androidTarget {
-        publishLibraryVariants("release")
+        publishLibraryVariants("release", "debug")
         compilations.all {
             kotlinOptions {
                 jvmTarget = "17"
@@ -76,4 +78,41 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = libs.versions.compose.plugin.get()
     }
+}
+
+mavenPublishing {
+    coordinates(
+        groupId = "io.github.thegbguy",
+        artifactId = "nepali-date-picker",
+        version = "1.0.0"
+    )
+
+    pom {
+        name.set("Kompose Nepali Date Picker")
+        description.set("A KMP library for data picker and date conversion.")
+        inceptionYear.set("2024")
+        url.set("https://github.com/theGBguy/KomposeNepaliDatePicker")
+        licenses {
+            license {
+                name.set("MIT")
+                url.set("https://opensource.org/licenses/MIT")
+            }
+        }
+        developers {
+            developer {
+                id.set("theGBguy")
+                name.set("Chiranjeevi Pandey")
+                url.set("https://github.com/theGBguy/")
+            }
+        }
+        scm {
+            url.set("https://github.com/theGBguy/KomposeNepaliDatePicker")
+            connection.set("scm:git:git://github.com/theGBguy/KomposeNepaliDatePicker.git")
+            developerConnection.set("scm:git:ssh://git@github.com/theGBguy/KomposeNepaliDatePicker.git")
+        }
+    }
+
+    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+
+    signAllPublications()
 }
