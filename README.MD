@@ -20,6 +20,10 @@ dependencies {
 
 # Using Date Picker
 
+| Android 	                                                                                                                                   | iOS  	                                                                                                                                    |
+|---------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="https://github.com/theGBguy/KomposeNepaliDatePicker/assets/25641763/29557728-c1d5-415e-97bc-da04c24eeb45" width="45%"></img>    	 | <img src="https://github.com/theGBguy/KomposeNepaliDatePicker/assets/25641763/e184182c-a24d-4100-9c6f-c1626cea83be" width="45%"></img>  	 |
+
 ```kotlin
 var showDialog by remember { mutableStateOf(false) }
 
