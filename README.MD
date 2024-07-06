@@ -4,6 +4,11 @@ This is KMP port of a date picker library written using Jetpack Compose for Andr
 to [Kiran Gyawali](https://github.com/keyrunHORNET) for
 this awesome [library](https://github.com/keyrunHORNET/composeNepaliDatePicker)
 
+![GitHub issues](https://img.shields.io/github/issues/theGBguy/KomposeNepaliDatePicker?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/theGBguy/KomposeNepaliDatePicker?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/theGBguy/KomposeNepaliDatePicker?style=for-the-badge)
+![Maven Central Version](https://img.shields.io/maven-central/v/io.github.thegbguy/nepali-date-picker?style=for-the-badge)
+
 # How to use
 
 Add common library as dependency in common build.gradle:
