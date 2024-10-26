@@ -19,7 +19,7 @@ repositories {
 }
 
 dependencies {
-    implementation("io.github.thegbguy:nepali-date-picker:1.0.0")
+    implementation("io.github.thegbguy:nepali-date-picker:1.0.2")
 }
 ```
 
