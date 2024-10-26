@@ -84,7 +84,7 @@ mavenPublishing {
     coordinates(
         groupId = "io.github.thegbguy",
         artifactId = "nepali-date-picker",
-        version = "1.0.1"
+        version = "1.0.2"
     )
 
     pom {
